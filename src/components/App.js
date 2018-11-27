@@ -8,8 +8,7 @@ class App extends Component {
       <div className="App color1">
         <h2 class="header">Michael DAntuono</h2>
         <h6 className="color2 header">Developer</h6>
-        <p>I am a web developer familiar with using HTML, CSS, Javascript, Python, C#, SQL, and other technologies including React, Entity Framework, NodeJS, and others.</p>
-        <p>I have been enrolled in CareerDevs Computer Science Academy in Providence, RI for a little over a year now.</p>
+        <p>Click around the site to read more about me and what I do :)</p>
       </div>
     );
   }

@@ -2,13 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/App';
-import Navbar from './components/Navbar'
-import Contact from './components/Contact'
-import Projects from './components/Projects'
+import Navbar from './components/Navbar';
+import Contact from './components/Contact';
+import About from './components/About';
+import Projects from './components/Projects';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 ReactDOM.render(<Projects />, document.getElementById('projects'));
+ReactDOM.render(<About />, document.getElementById('about'));
 ReactDOM.render(<Contact />, document.getElementById('contact'));
 ReactDOM.render(<Navbar />, document.getElementById('navbar'));
 
