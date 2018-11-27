@@ -28,8 +28,8 @@ class Navbar extends Component {
           </ul>
           <ul className="navbar-nav navbar-right">
             <li><a href="https://www.facebook.com/mikeishere3"><button className="btn social"><i class="fab fa-facebook"></i></button></a></li>
-            <li><a href="https://twitter.com/Mike_DAntuono"><button className="btn social"><i class="fab fa-instagram"></i></button></a></li>
-            <li><a href="https://www.instagram.com/mike_dantuono/"><button className="btn social"><i class="fab fa-twitter"></i></button></a></li>
+            <li><a href="https://www.instagram.com/mike_dantuono/"><button className="btn social"><i class="fab fa-instagram"></i></button></a></li>
+            <li><a href="https://twitter.com/Mike_DAntuono"><button className="btn social"><i class="fab fa-twitter"></i></button></a></li>
             <li><a href="https://www.linkedin.com/in/michael-dantuono/"><button className="btn social"><i class="fab fa-linkedin"></i></button></a></li>
           </ul>
         </div>
