@@ -6,8 +6,8 @@ class App extends Component {
   render() {
     return (
       <div className="App color1">
-        <h2 class="header">Michael DAntuono</h2>
-        <h6 className="color2 header">Developer</h6>
+        <h1 class="header">Michael DAntuono</h1>
+        <h5 className="color2 header">Developer</h5>
         <p>Click around the site to read more about me and what I do :)</p>
       </div>
     );

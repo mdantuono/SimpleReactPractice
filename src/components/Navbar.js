@@ -6,9 +6,7 @@ class Navbar extends Component {
       <nav className="navbar navbar-expand-md fixed-top">
         <a className="navbar-brand" href=""><i class="fas fa-align-left"></i></a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">

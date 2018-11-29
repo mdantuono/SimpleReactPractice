@@ -1,14 +1,23 @@
 body {
   background-color: rgba(45, 52, 54,1.0);
-  text-align: center;
+  background-image: url("backdrop.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  /* padding-top: 80px; */
+  padding-bottom: 20px;
 }
 
 .color1 {
   color: #ecf0f1;
 }
 
+.navbar-toggler-icon {
+  color:white;
+}
+
 .color2 {
-  color: #1abc9c;
+  color: #74b9ff;
 }
 
 .div-padding {
@@ -17,12 +26,11 @@ body {
 
 #page-div {
   padding: 10px;
-  padding-top: 60px;
   border-radius: 5px;
   text-align: center;
   width: 90%;
   margin: 0 auto;
-  background-color: rgba(0, 0, 0,0.2);
+  background-color: rgba(0, 0, 0,0.5);
 }
 
 .App-logo {
@@ -42,15 +50,16 @@ body {
 }
 
 .App-link {
-  color: #61dafb;
+  color: #74b9ff;
 }
 
+/* Normal Navigation Bar */
 nav {
-  background-color: rgba(45, 52, 54,1.0);
+  background-color: rgba(45, 52, 54,0.8);
 }
 
 .nav-link {
-  color: #1abc9c;
+  color: #74b9ff;
 }
 .nav-link:hover {
   color: #ecf0f1;
@@ -61,8 +70,37 @@ nav {
   color: #ecf0f1;
 }
 .navbar-brand:hover {
-  color: #6c5ce7;
+  color: #a29bfe;
   transition: 0.8s;
+}
+
+/* Side Navigation Bar */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 250px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.openbtn {
+  text-align: left;
+  padding-left: 15px;
+  font-size: 25px;
 }
 
 .header {
@@ -75,7 +113,7 @@ a {
 }
 
 a:hover {
-  color: #6c5ce7;
+  color: #a29bfe;
   text-decoration: none;
   transition: 0.8s;
 }
@@ -109,8 +147,4 @@ tr {
 
 .small-img {
   width: 100px;
-}
-
-hr {
-  color: #b2bec3;
 }
