@@ -1,26 +1,48 @@
 import React, { Component } from 'react';
 
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-    document.body.style.backgroundColor = "white";
-}
-
 class SideNav extends Component {
+  constructor(props) {
+        super(props);
+        this.state = {
+          width: '0',
+        };
+        this.openNav = this.openNav.bind(this);
+        this.closeNav = this.closeNav.bind(this);
+    }
+
+
+  openNav() {
+    this.setState({
+      width: '250px'
+    });
+      // document.getElementById("mySidenav").style.width = "250px";
+      // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+
+  closeNav() {
+    this.setState({
+      width: '0'
+    });
+      // document.getElementById("mySidenav").style.width = "0";
+      // document.body.style.backgroundColor = "white";
+  }
+
   render() {
+    const styles = {
+      navstyle: {
+        width: this.state.width
+      }
+    };
+
+    const { navstyle } = styles;
+
     return (
       <div>
-        <a href="javascript:void(0)" class="openbtn" onclick="openNav()">
+        <a href="javascript:void(0)" class="openbtn" onClick={this.openNav}>
           <i class="fas fa-align-left"></i>
         </a>
-        <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div id="mySidenav" class="sidenav" style={navstyle}>
+          <a href="javascript:void(0)" class="closebtn" onClick={this.closeNav}>&times;</a>
           <a href="#home">Home</a>
           <a href="#projects">Projects</a>
           <a href="#about">About</a>
